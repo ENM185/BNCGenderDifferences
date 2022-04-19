@@ -7,7 +7,7 @@ FEMALE = [lemma != ".*_(PUNC|STOP|UNC)"] :: match.u_sex = 'female';
 
 total male = 5654348
 total female = 3825804
-total tokens with u_sex known = 9480152
+total tokens with u_sex being male or female = 9480152
 
 m/t = 0.5964
 f/t = 0.4036
