@@ -4,6 +4,9 @@ import numpy as np
 male_model = word2vec.Word2Vec.load("original/male.model")
 female_model = word2vec.Word2Vec.load("original/female.model")
 
+male_model.init_sims(replace=True)
+female_model.init_sims(replace=True)
+
 # Intersect vocabularies
 shared_words = list(set(male_model.wv.index_to_key) & set(female_model.wv.index_to_key))
 
